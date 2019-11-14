@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace no_1
 {
@@ -43,29 +43,23 @@ namespace no_1
                 var no5_1 = (ss[5] == '9');
                 var no5_2 = (ss[5] != '9');
                 /* */
-                var hub1 = (no0_1 && no1_1 && no2_2);
-                var hub2 = (no0_2 && no1_1 && no2_1 && no3_2);
-                var hub3 = (no1_2 && no2_1 && no3_1 && no4_2);
-                var hub4 = (no2_2 && no3_1 && no4_1 && no5_2);
-                var hub5 = (no3_2 && no4_1 && no5_1);
-                /*  */
-                if (hub1)
+                if (no0_1 && no1_1 && no2_2)
                 {
                     result.Add(item);
                 }
-                else if (hub2)
+                else if (no0_2 && no1_1 && no2_1 && no3_2)
                 {
                     result.Add(item);
                 }
-                else if (hub3)
+                else if (no1_2 && no2_1 && no3_1 && no4_2)
                 {
                     result.Add(item);
                 }
-                else if (hub4)
+                else if (no2_2 && no3_1 && no4_1 && no5_2)
                 {
                     result.Add(item);
                 }
-                else if (hub5)
+                else if (no3_2 && no4_1 && no5_1)
                 {
                     result.Add(item);
                 }
